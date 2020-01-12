@@ -1,0 +1,20 @@
+{
+  "name": "ems-mean1",
+  "version": "1.0.0",
+  "description": "simple mean apps",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "guy asulin",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/cli": "^8.3.19",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.9",
+    "multer": "^1.4.2"
+  }
+}
