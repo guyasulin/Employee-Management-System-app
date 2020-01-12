@@ -1,0 +1,22 @@
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <td scope="col">Name</td>
+        <td scope="col">Position</td>
+        <td scope="col">Department</td>
+        <td scope="col" style="width: 275; text-align: center;">Action</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of employees">
+        <td>{{ employee.name }}</td>
+        <td>{{ employee.position }}</td>
+        <td>{{ employee.department }}</td>
+        <td style="width: 275; ">
+           <a type="button" class="btn btn-info" routerLink="/show/{{ employee._id }}">Detail</a>
+           <a type="button" class="btn btn-success" routerLink="/edit/{{ employee._id }}" >Edit</a>
+           <a type="button" class="btn btn-danger" (click)="deleteEmployee(employee._id)">Delete</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
